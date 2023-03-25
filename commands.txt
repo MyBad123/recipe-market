@@ -1,0 +1,3 @@
+# Для установления переменной sass
+
+export PATH=$PATH:/Users/gena/Downloads/dart-sass

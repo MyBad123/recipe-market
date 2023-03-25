@@ -1,0 +1,120 @@
+.block4 {
+    width: 100%;
+    margin-bottom: 81px;
+}
+
+.block4-text {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #272727;
+    margin-bottom: 30px;
+}
+
+.block4-pointers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block4-pointers-elem {
+    display: flex;
+    align-items: center;
+}
+
+.block4-pointers-elem-img {
+    margin-right: 16px;
+}
+
+.block4-pointers-elem-text {
+    max-width: 265px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6A6A6A;
+}
+
+.block5 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 89px;
+}
+
+.block5-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block5-left-elem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(36, 36, 36, 0.15);
+    border-radius: 24px;
+}
+
+.block5-left-elem-first {
+    border: 2px solid #F5791D;
+}
+
+.block5-left-elem-textelem {
+    position: absolute;
+    top: 6.48px;
+    right: 34.13px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.block5-left-elem-name {
+    position: absolute;
+    bottom: -31px;
+    color: #6A6A6A;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.block5-left-elem-name-first {
+    color: #F5791D;
+}
+
+.block5-left-between {
+    margin: 0 16px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(106, 106, 106, 0.8);
+}
+
+.block5-right {
+    max-width: 476px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.block5-right-main {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: #272727;
+    margin-bottom: 14px;
+}
+
+.block5-right-second {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6A6A6A;
+}
