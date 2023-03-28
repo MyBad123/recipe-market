@@ -12,13 +12,6 @@
     margin: auto;
 }
 
-.header {
-    width: 100%;
-    padding: 20px;
-    background-color: aquamarine;
-    margin-bottom: 40px;
-}
-
 .block1 {
     display: flex;
     justify-content: space-between;
