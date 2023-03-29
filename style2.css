@@ -121,6 +121,10 @@
     color: #000000;
 }
 
+.block7-container-picture {
+    width: 100%;
+}
+
 .block7-container-picture-mobile {
     display: none;
 }

@@ -176,6 +176,10 @@
     justify-content: flex-end;
 }
 
+.block3-division-right > img {
+    width: 100%;
+}
+
 .block3-union {
     padding: 30px;
     width: 100%;
