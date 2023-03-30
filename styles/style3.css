@@ -499,6 +499,10 @@
         line-height: 22px;
     }
 
+    .block8-slider {
+        display: flex;
+    }
+
     .block8-slider-left {
         display: none;
     }
@@ -566,5 +570,11 @@
         width: 90%;
         right: 0;
         bottom: -86px;
+    }
+}
+
+@media (max-width: 850px) {
+    .block9-form-input-input {
+        width: 120px;
     }
 }
