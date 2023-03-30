@@ -1,17 +1,15 @@
 // work with checkbox in block9
-/*
 let checkboxStatus = 0;
-document.querySelector('.checkbox').onclick = () => {
+document.querySelector('.block9-form-checkbox-checkbox').onclick = () => {
     if (checkboxStatus === 0) {
-        document.querySelector('.checkbox-img').classList.remove('checkbox-img-none');
+        document.querySelector('.block9-form-checkbox-checkbox-img').classList.remove('block9-form-checkbox-checkbox-img-none');
         checkboxStatus = 1;
     }
     else {
-        document.querySelector('.checkbox-img').classList.add('checkbox-img-none');
+        document.querySelector('.block9-form-checkbox-checkbox-img').classList.add('block9-form-checkbox-checkbox-img-none');
         checkboxStatus = 0;
     }
 }
-*/
 
 // work with slider
 function getNewActive(arr, elems, index) {
@@ -30,7 +28,7 @@ function getNewActive(arr, elems, index) {
     // elem is active or no
     let isActive = false;
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === "element-left-bottom-elem-active") {
+        if (arr[i] === "block8-slider-right-slider-left-bottom-elem-active") {
             isActive = true;
             break;
         }
@@ -43,8 +41,8 @@ function getNewActive(arr, elems, index) {
     }
 }
 
-document.querySelector('.element-right-img').onclick = () => {
-    let elems = document.querySelectorAll('.element-left-bottom-elem');
+document.querySelector('.block8-slider-right-slider-right-img').onclick = () => {
+    let elems = document.querySelectorAll('.block8-slider-right-slider-left-bottom-elem');
     
     // get data for new item
     let newData;
@@ -57,17 +55,17 @@ document.querySelector('.element-right-img').onclick = () => {
 
     // init elem for getting new ui
     let newUI = [
-        '<span class="result-name">lol1</span>',
-        '<span class="result-name">lol2</span>',
-        '<span class="result-name">lol3</span>',
-        '<span class="result-name">lol4</span>',
-        '<span class="result-name">lol5</span>'
+        '<div class="block8-withpicture-left"><img src="./content/block8/phone.svg" alt="" class="block8-withpicture-left-phone"><div class="block8-withpicture-left-graphs"><div class="block8-withpicture-left-graphs-top"><div class="block8-withpicture-left-graphs-top-stat"><h3 class="block8-withpicture-left-graphs-top-stat-maintext">E-grocery market size</h3><p class="block8-withpicture-left-graphs-top-stat-secondstat">And tendentions</p><img src="./content/block8/stat.svg" alt="stat" class="block8-withpicture-left-graphs-top-stat-pic"></div><div class="block8-withpicture-left-graphs-top-social"><img src="./content/block8/instvk.svg" alt="instvk" class="block8-withpicture-left-graphs-top-social-pic"><h3 class="block8-withpicture-left-graphs-top-social-maintext">Monetize</h3><p class="block8-withpicture-left-graphs-top-social-secondtext">your social network</p></div></div><div class="block8-withpicture-left-graphs-bottom"><div class="block8-withpicture-left-statcircle"><h3 class="block8-withpicture-left-statcircle-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-secondtext">For bloggers</p><div class="block8-withpicture-left-statcircle-container"><h3 class="block8-withpicture-left-statcircle-container-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-container-secondtext">For bloggers</p></div><img src="./content/block8/statcircle.svg" alt="statcircle" class="block8-secondtext-withpicture-left-statcircle-pic"></div></div></div></div><div class="block8-withpicture-right"><h2 class="block8-withpicture-right-maintext">1 Technology</h2><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform.</p><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform for authors of unique recipes.</p></div>',
+        '<div class="block8-withpicture-left"><img src="./content/block8/phone.svg" alt="" class="block8-withpicture-left-phone"><div class="block8-withpicture-left-graphs"><div class="block8-withpicture-left-graphs-top"><div class="block8-withpicture-left-graphs-top-stat"><h3 class="block8-withpicture-left-graphs-top-stat-maintext">E-grocery market size</h3><p class="block8-withpicture-left-graphs-top-stat-secondstat">And tendentions</p><img src="./content/block8/stat.svg" alt="stat" class="block8-withpicture-left-graphs-top-stat-pic"></div><div class="block8-withpicture-left-graphs-top-social"><img src="./content/block8/instvk.svg" alt="instvk" class="block8-withpicture-left-graphs-top-social-pic"><h3 class="block8-withpicture-left-graphs-top-social-maintext">Monetize</h3><p class="block8-withpicture-left-graphs-top-social-secondtext">your social network</p></div></div><div class="block8-withpicture-left-graphs-bottom"><div class="block8-withpicture-left-statcircle"><h3 class="block8-withpicture-left-statcircle-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-secondtext">For bloggers</p><div class="block8-withpicture-left-statcircle-container"><h3 class="block8-withpicture-left-statcircle-container-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-container-secondtext">For bloggers</p></div><img src="./content/block8/statcircle.svg" alt="statcircle" class="block8-secondtext-withpicture-left-statcircle-pic"></div></div></div></div><div class="block8-withpicture-right"><h2 class="block8-withpicture-right-maintext">2 Technology</h2><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform.</p><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform for authors of unique recipes.</p></div>',
+        '<div class="block8-withpicture-left"><img src="./content/block8/phone.svg" alt="" class="block8-withpicture-left-phone"><div class="block8-withpicture-left-graphs"><div class="block8-withpicture-left-graphs-top"><div class="block8-withpicture-left-graphs-top-stat"><h3 class="block8-withpicture-left-graphs-top-stat-maintext">E-grocery market size</h3><p class="block8-withpicture-left-graphs-top-stat-secondstat">And tendentions</p><img src="./content/block8/stat.svg" alt="stat" class="block8-withpicture-left-graphs-top-stat-pic"></div><div class="block8-withpicture-left-graphs-top-social"><img src="./content/block8/instvk.svg" alt="instvk" class="block8-withpicture-left-graphs-top-social-pic"><h3 class="block8-withpicture-left-graphs-top-social-maintext">Monetize</h3><p class="block8-withpicture-left-graphs-top-social-secondtext">your social network</p></div></div><div class="block8-withpicture-left-graphs-bottom"><div class="block8-withpicture-left-statcircle"><h3 class="block8-withpicture-left-statcircle-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-secondtext">For bloggers</p><div class="block8-withpicture-left-statcircle-container"><h3 class="block8-withpicture-left-statcircle-container-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-container-secondtext">For bloggers</p></div><img src="./content/block8/statcircle.svg" alt="statcircle" class="block8-secondtext-withpicture-left-statcircle-pic"></div></div></div></div><div class="block8-withpicture-right"><h2 class="block8-withpicture-right-maintext">3 Technology</h2><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform.</p><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform for authors of unique recipes.</p></div>',
+        '<div class="block8-withpicture-left"><img src="./content/block8/phone.svg" alt="" class="block8-withpicture-left-phone"><div class="block8-withpicture-left-graphs"><div class="block8-withpicture-left-graphs-top"><div class="block8-withpicture-left-graphs-top-stat"><h3 class="block8-withpicture-left-graphs-top-stat-maintext">E-grocery market size</h3><p class="block8-withpicture-left-graphs-top-stat-secondstat">And tendentions</p><img src="./content/block8/stat.svg" alt="stat" class="block8-withpicture-left-graphs-top-stat-pic"></div><div class="block8-withpicture-left-graphs-top-social"><img src="./content/block8/instvk.svg" alt="instvk" class="block8-withpicture-left-graphs-top-social-pic"><h3 class="block8-withpicture-left-graphs-top-social-maintext">Monetize</h3><p class="block8-withpicture-left-graphs-top-social-secondtext">your social network</p></div></div><div class="block8-withpicture-left-graphs-bottom"><div class="block8-withpicture-left-statcircle"><h3 class="block8-withpicture-left-statcircle-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-secondtext">For bloggers</p><div class="block8-withpicture-left-statcircle-container"><h3 class="block8-withpicture-left-statcircle-container-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-container-secondtext">For bloggers</p></div><img src="./content/block8/statcircle.svg" alt="statcircle" class="block8-secondtext-withpicture-left-statcircle-pic"></div></div></div></div><div class="block8-withpicture-right"><h2 class="block8-withpicture-right-maintext">4 Technology</h2><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform.</p><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform for authors of unique recipes.</p></div>',
+        '<div class="block8-withpicture-left"><img src="./content/block8/phone.svg" alt="" class="block8-withpicture-left-phone"><div class="block8-withpicture-left-graphs"><div class="block8-withpicture-left-graphs-top"><div class="block8-withpicture-left-graphs-top-stat"><h3 class="block8-withpicture-left-graphs-top-stat-maintext">E-grocery market size</h3><p class="block8-withpicture-left-graphs-top-stat-secondstat">And tendentions</p><img src="./content/block8/stat.svg" alt="stat" class="block8-withpicture-left-graphs-top-stat-pic"></div><div class="block8-withpicture-left-graphs-top-social"><img src="./content/block8/instvk.svg" alt="instvk" class="block8-withpicture-left-graphs-top-social-pic"><h3 class="block8-withpicture-left-graphs-top-social-maintext">Monetize</h3><p class="block8-withpicture-left-graphs-top-social-secondtext">your social network</p></div></div><div class="block8-withpicture-left-graphs-bottom"><div class="block8-withpicture-left-statcircle"><h3 class="block8-withpicture-left-statcircle-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-secondtext">For bloggers</p><div class="block8-withpicture-left-statcircle-container"><h3 class="block8-withpicture-left-statcircle-container-maintext">Increased Conversion</h3><p class="block8-withpicture-left-statcircle-container-secondtext">For bloggers</p></div><img src="./content/block8/statcircle.svg" alt="statcircle" class="block8-secondtext-withpicture-left-statcircle-pic"></div></div></div></div><div class="block8-withpicture-right"><h2 class="block8-withpicture-right-maintext">5 Technology</h2><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform.</p><p class="block8-withpicture-right-secondtext">If you want to earn more than 50,000 ARS per month on your content - join our platform for authors of unique recipes.</p></div>',
     ];
 
     // make new active elem
-    elems[newData.oldElem].classList.remove('element-left-bottom-elem-active');
-    elems[newData.newIndex].classList.add('element-left-bottom-elem-active');
+    elems[newData.oldElem].classList.remove('block8-slider-right-slider-left-bottom-elem-active');
+    elems[newData.newIndex].classList.add('block8-slider-right-slider-left-bottom-elem-active');
 
     // to paste new content
-    document.querySelector('.result-name').innerHTML = newUI[newData.newIndex];
+    document.querySelector('.block8-withpicture').innerHTML = newUI[newData.newIndex];
 }
