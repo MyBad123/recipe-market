@@ -200,6 +200,8 @@
     .block7-container-text {
         position: relative;
         width: 100%;
+        max-width: 100%;
+        left: 0;
     }
 
     .block7-container-british {

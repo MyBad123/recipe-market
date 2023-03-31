@@ -387,7 +387,7 @@
     }
 
     .block8-withpicture-left-phone {
-        width: 140px;
+        width: 120px;
     }
 
     .block8-withpicture-left-graphs {
@@ -395,7 +395,7 @@
     }
 
     .block8-withpicture-left-graphs-top {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .block8-withpicture-left-graphs-top-stat {
@@ -420,6 +420,7 @@
         margin-top: 34px;
         width: 84px;
         border-radius: 8px;
+        padding: 11px 13px 8px 13px;
     }
 
     .block8-withpicture-left-graphs-top-social-pic {
@@ -441,7 +442,6 @@
     }
 
     .block8-withpicture-left-statcircle {
-        width: 100%;
         margin: 0px;
         flex-direction: row;
         padding: 6px 10px 6px 10px;
@@ -481,6 +481,7 @@
 
     .block8-secondtext-withpicture-left-statcircle-pic {
         height: 29px;
+        margin-left: 20px;
     }
 
     .block8-withpicture-right {
@@ -570,6 +571,24 @@
         width: 90%;
         right: 0;
         bottom: -86px;
+    }
+
+    .block9-form {
+        margin-bottom: 30px;
+    }
+
+    .block9-graph {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .block9-form {
+        margin-bottom: 130px;
+    }
+
+    .block9-graph {
+        display: flex;
     }
 }
 
