@@ -170,7 +170,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding: 16px 20px 16px 20px;
+        padding: 8px 20px 8px 20px;
         margin-bottom: 10px;
     }
 
@@ -189,6 +189,10 @@
         display: none;
     }
 
+    .block7 {
+        margin-bottom: 35px;
+    }
+
     .block7-container {
         display: flex;
         flex-direction: column;
@@ -202,6 +206,18 @@
         width: 100%;
         max-width: 100%;
         left: 0;
+    }
+
+    .block7-container-text-main {
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.04em;
+        margin-bottom: 6px;
+    }
+
+    .block7-container-text-second {
+        font-size: 14px;
+        line-height: 22px;
     }
 
     .block7-container-british {

@@ -346,6 +346,12 @@
 
 .block9-form-checkbox-text-link {
     color: #FF8E0A;
+    text-decoration: underline;
+}
+
+.block9-form-checkbox-text-link:visited {
+    color: #FF8E0A;
+    text-decoration: underline;
 }
 
 .block9-graph {
@@ -368,6 +374,7 @@
         letter-spacing: 0.04em;
         text-transform: capitalize;
         color: #272727;
+        margin-bottom: 11px;
     }
 
     .block8-secondtext {
