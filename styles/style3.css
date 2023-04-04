@@ -237,8 +237,7 @@
 .block9 {
     width: 100%;
     background: linear-gradient(95.38deg, rgba(255, 255, 255, 0) -0.58%, rgba(255, 255, 255, 0) -0.28%, #F9F4EF 54.62%, #FBDDC1 86.65%);
-    box-shadow: inset 0px 4px 4px rgba(198, 198, 198, 0.15);
-    filter: drop-shadow(-4px 0px 4px rgba(198, 198, 198, 0.25)) drop-shadow(-4px 0px 4px rgba(198, 198, 198, 0.25)) drop-shadow(4px 4px 4px rgba(198, 198, 198, 0.4));
+    box-shadow: -4px 0px 4px rgba(198, 198, 198, 0.25), -4px 0px 4px rgba(198, 198, 198, 0.25), 4px 4px 4px rgba(198, 198, 198, 0.4), inset 0px 4px 4px rgba(198, 198, 198, 0.15);
     border-radius: 20px;
     padding: 40.13px 40px 41px 40px;
     margin-bottom: 60px;
